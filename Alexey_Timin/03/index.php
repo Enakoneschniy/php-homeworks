@@ -6,38 +6,62 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<div>
-    <form action="" method="post">
-        <p><input type="text" required name="a" placeholder="A" value="<?=isset($_REQUEST['a']) ? $_REQUEST['a'] : ''?>"></p>
-        <p><input type="text" required name="b" placeholder="B" value="<?=isset($_REQUEST['b']) ? $_REQUEST['b'] : ''?>"></p>
-        <p><input type="text" required name="c" placeholder="C"  value="<?=isset($_REQUEST['c']) ? $_REQUEST['c'] : ''?>"></p>
-       <p> <input type="submit" name="submit" value="Send"></p>
-    </form>
-    <?php
-    //header('Content-Type: text/html; charset=utf-8');
-    var_dump($_REQUEST);
-    if(isset($_REQUEST['submit'])){
-        $a = $_REQUEST['a'];
-        $b = $_REQUEST['b'];
-        $c = $_REQUEST['c'];
-        $x = null;
 
-        if ($a < $c) {
-            $x = $a + $b + $c;
-            echo "формула", "<br />", " x = a + b + c";
-        } elseif ($a > $c) {
-            $x = $a * $b * $c;
-            echo "формула", "<br />", " x = a * b * c";
-        } else {
-            $x = 100;
-        }
+<?php
+$cols = 5;
+$rows = 6;
+echo "<table><tr>";
+for ($cols = 1; $cols <=5; $cols++) {
+ for ($rows = 1; $rows <=6; $rows++)
+     echo "<td>".($cols*$rows)."</td>";
+    if ($cols !=5) echo "</tr><tr>";
+};
+echo "</tr></table>";
 
-        echo "<br />", " Результат : $x";
-    }
+?>
+<hr>
+<table>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>4</td>
+        <td>6</td>
+        <td>8</td>
+        <td>10</td>
+        <td>12</td>
+    </tr><tr>
+        <td>3</td>
+        <td>6</td>
+        <td>9</td>
+        <td>12</td>
+        <td>15</td>
+        <td>18</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>8</td>
+        <td>12</td>
+        <td>16</td>
+        <td>20</td>
+        <td>24</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>10</td>
+        <td>15</td>
+        <td>20</td>
+        <td>25</td>
+        <td>30</td>
+    </tr>
 
-    ?>
-
-</div>
+</table>
 
 
 </body>
