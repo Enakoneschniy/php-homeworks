@@ -1,7 +1,7 @@
 <?php
 
-$cols = 7;
-$rows = 5;
+$cols = Rand(1,10);
+$rows = Rand(1,10);
 
 
 $table = '<table border="1">';
