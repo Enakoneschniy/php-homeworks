@@ -3,66 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
 <?php
-$cols = 5;
-$rows = 6;
-echo "<table><tr>";
-for ($cols = 1; $cols <=5; $cols++) {
- for ($rows = 1; $rows <=6; $rows++)
-     echo "<td>".($cols*$rows)."</td>";
-    if ($cols !=5) echo "</tr><tr>";
-};
-echo "</tr></table>";
+$age = rand(1 , 80);//граница задана для удобства проверки
+    echo "возраст : ",$age,"<br>";
+if($age >= 18 && $age <=59) {
+    echo "вам еще работать и работать", "<hr>";
+}
+elseif ($age > 59 && $age <= 65) { //граница задана для удобства проверки
+    echo "вам пора на пенсию", "<hr>";
+}
+elseif ($age >= 1 && $age <=17) {
+    echo "вам еще рано работать", "<hr>";
+}
+else {
+    echo "неизвестный возраст","<hr>";
+}
 
 ?>
-<hr>
-<table>
-    <tr>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-        <td>4</td>
-        <td>5</td>
-        <td>6</td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>4</td>
-        <td>6</td>
-        <td>8</td>
-        <td>10</td>
-        <td>12</td>
-    </tr><tr>
-        <td>3</td>
-        <td>6</td>
-        <td>9</td>
-        <td>12</td>
-        <td>15</td>
-        <td>18</td>
-    </tr>
-    <tr>
-        <td>4</td>
-        <td>8</td>
-        <td>12</td>
-        <td>16</td>
-        <td>20</td>
-        <td>24</td>
-    </tr>
-    <tr>
-        <td>5</td>
-        <td>10</td>
-        <td>15</td>
-        <td>20</td>
-        <td>25</td>
-        <td>30</td>
-    </tr>
-
-</table>
-
-
 </body>
 </html>
