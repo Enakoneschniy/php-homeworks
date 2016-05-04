@@ -17,17 +17,16 @@ echo "переменная rows : ",$rows;
 echo "<hr>";
 //задание 2 с случайными переменными
 
-$table = '<table>';
-
-for ($tr=1; $tr<=$rows; $tr++) {
-    $table .= '<tr>';
-    for ($td = 1; $td <= $cols; $td++) {
-        $table .= '<td>' . $tr * $td . '</td>';
+echo '<table>';
+for($a = 1;$a <=$cols; $a++) {
+    echo '<tr>';
+    for($b = 1;$b <=$rows;$b++) {
+        echo '<td>'.$a*$b.'</td>';
     }
-    $table .= '</tr>';
+    echo '</tr>';
 }
-$table .= '</table>';
-echo $table;
+echo '</table>';
+
 
 //второй вариант с фиксированными произвольными переменными
 echo "<hr>";
