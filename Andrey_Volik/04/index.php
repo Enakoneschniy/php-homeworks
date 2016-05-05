@@ -660,7 +660,7 @@
                 <input class="xy_field" type="number" min="-245" max="+245" name="y" value="0" <?if ($id_counter == 5) {?>disabled<?};?>>
               </div>
               <div class="text" style="top: 180px; left: 37px; ">Circle radius:</div>
-              <input style="position: absolute; top: 210px; left: 22px; width: 150px;" type="number" name="radius" min="1" max="245" value="100" <?if ($id_counter == 5) {?>disabled<?};?>>
+              <input style="position: absolute; top: 210px; left: 22px; width: 150px;" type="number" name="radius" min="1" max="150" value="100" <?if ($id_counter == 5) {?>disabled<?};?>>
               <div class="text" style="top: 240px; left: 60px; ">Angles:</div>
               <div class="coordinates" style="top: 270px; left: 10px;">
                 S: 
