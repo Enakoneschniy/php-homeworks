@@ -664,9 +664,9 @@
               <div class="text" style="top: 240px; left: 60px; ">Angles:</div>
               <div class="coordinates" style="top: 270px; left: 10px;">
                 S: 
-                <input class="xy_field" type="number" min="0" max="360" name="angle_1" value="0" <?if ($id_counter == 5) {?>disabled<?};?>>
+                <input class="xy_field" type="number" min="0" max="720" name="angle_1" value="0" <?if ($id_counter == 5) {?>disabled<?};?>>
                 E:
-                <input class="xy_field" type="number" min="0" max="360" name="angle_2" value="360" <?if ($id_counter == 5) {?>disabled<?};?>>
+                <input class="xy_field" type="number" min="0" max="720" name="angle_2" value="360" <?if ($id_counter == 5) {?>disabled<?};?>>
               </div>
               <input style="top: 310px;" class="create" type="submit" name="create" value="Create Field!" <?if ($id_counter == 5) {?>disabled<?};?>>
               <div style="height: 265px;"></div>
