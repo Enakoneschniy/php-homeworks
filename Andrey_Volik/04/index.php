@@ -459,11 +459,11 @@
                   $y_counter = 0;
                   
                   for ($j = 1; $j < $index; $j++) {
-                      if ($cir_x[$j] == $heu_x_glob) {
+                      if (($cir_x[$j] == $heu_x_glob) or ($cir_x[$j] + 1 == $heu_x_glob) or ($cir_x[$j] - 1 == $heu_x_glob)) {
                           $y_counter = $y_counter + 1;
                           $interval_y[$y_counter] = $cir_y[$j];
                       }
-                      if ($cir_y[$j] == $heu_y_glob) {
+                      if (($cir_y[$j] == $heu_y_glob) or ($cir_y[$j] + 1 == $heu_y_glob) or ($cir_y[$j] - 1 == $heu_y_glob)) {
                           $x_counter = $x_counter + 1;
                           $interval_x[$x_counter] = $cir_x[$j];
                       }
@@ -490,7 +490,6 @@
                           $y_min = $interval_y[$j];
                       }
                   }
-                  
                   if ((($heu_x_glob >= $x_min) and ($heu_x_glob <= $x_max)) and
                      (($heu_y_glob >= $y_min) and ($heu_y_glob <= $y_max))) {
                         $match = true;
