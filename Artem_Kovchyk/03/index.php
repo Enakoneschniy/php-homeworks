@@ -8,5 +8,5 @@
 	} elseif ($age >= 1 && $age <= 17) {
 		echo "Вам еще рано работать";
 	} else {
-		echo "Неизвестный возраст"; // This condition will never execute because age is bigger than 59 (see condition 2), so I guess This a specification bug.
+		echo "Неизвестный возраст"; // This condition will never be executed because age is bigger than 59 (see condition 2), so I guess This a specification bug.
 	}
