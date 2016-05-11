@@ -25,8 +25,8 @@
 <body>
 <?php
 	//Task 1
-	$cols = rand(1, 10);
-	$rows = rand(1, 10);
+	$cols = rand(2, 10);
+	$rows = rand(2, 10);
 
 	function createArray($cols, $rows) {
 		$array = [];
