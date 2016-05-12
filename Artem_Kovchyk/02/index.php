@@ -29,7 +29,7 @@
 		echo $x;
 	}
 	
-	findX(3, 5, 4);
+	/*findX(3, 5, 4);*/
 
 	//Option 2
 	//This is my another attempt using OOP approach))) I even don't know whether this is helpful in this case)))
@@ -61,9 +61,10 @@
 		public function getX() {
 			return $this->findX();
 		}
+
 	}
 
-	$calculator = new Calculator(3, 5, 4);
-
+	$calculator = new Calculator(3, 5, 5);
 	echo $calculator->getX();
+
 ?>
