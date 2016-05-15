@@ -6,11 +6,11 @@
 </head>
 <body>
 
-<h3>Первое задание</h3>
+<h3>First task</h3>
 
 <form action="" method="post">
     <p>
-        <label for="number">Введите число</label>
+        <label for="number">Enter the number:</label>
         <input type="text" name="number" style="width: 25px;" placeholder="<?=$_REQUEST['number'];?>">
     </p>
     <p>
@@ -32,7 +32,7 @@ if($_REQUEST['submit'] == 'result'){
 ?>
 <hr>
 
-<h3>Второе задание</h3>
+<h3>Second task</h3>
 <?php
 
 $arSquare = [];
@@ -46,7 +46,7 @@ var_dump($arSquare);
 ?>
 <hr>
 
-<h3>Третье задание</h3>
+<h3>Third task</h3>
 <?php
 
 $arNull = [];
@@ -63,8 +63,25 @@ var_dump($arNull);
 ?>
 <hr>
 
+<h3>Fourth task</h3>
+<?php
 
-<h3>Четвертое и Пятое задание</h3>
+$arRep = [1, 2, 3, 3, 5, 'Коля', 'Олег', 'Олег', 'Гриша', 'Коля'];
+$x = count(array_unique($arRep));
+$y = count($arRep);
+
+if ($y - $x == 0) {
+    echo "Elements are not repeated";
+}
+else {
+    echo "Repeated elements";
+}
+var_dump($arRep);
+echo "<hr>";
+
+?>
+
+<h3>Fifth task</h3>
 <?php
 
 $arRepDel = [1, 2, 1, 3, 5, 2, 'Коля', 'Олег', 'Олег', 'Гриша', 'Коля'];
@@ -73,11 +90,10 @@ var_dump($arRepDel);
 $res = array_unique($arRepDel);
 var_dump($res);
 
-
 ?>
 <hr>
 
-<h3>Шестое задание</h3>
+<h3>Sixth task</h3>
 <?php
 
 $arInput = [1, -2, 3, -4, 5];
@@ -92,7 +108,7 @@ var_dump($arInput);
 ?>
 <hr>
 
-<h3>Седьмое задание</h3>
+<h3>Seventh task</h3>
 <?php
 
 
