@@ -132,4 +132,19 @@ function percentage_of_the_value($array,$percent){
 echo 'Массив после: ';
 print_r(percentage_of_the_value($array,$_POST["p"]));
 
+
+function outputr($n){
+
+    if(($n > 0) & (($n & ($n - 1)) == 0)) {
+        echo "YES";
+    }else{
+        echo "NO";
+    }
+
+}
+
+$n = rand(1,10);
+outputr($n);
+
+
 ?>
