@@ -33,6 +33,7 @@ function calendar()
     }
 }
 calendar();
+echo '<hr>';
 ?>
 </body>
 </html>

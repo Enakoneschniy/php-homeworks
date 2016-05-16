@@ -76,6 +76,7 @@ for ($i = 0;$i < count($arFive);$i++){
 }
 echo '<br>';
 print_r($arSix);
+echo '<hr>';
 
 
 ?>
