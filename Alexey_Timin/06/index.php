@@ -34,6 +34,21 @@ function calendar()
 }
 calendar();
 echo '<hr>';
+$arMass = array();
+function sluchMass($min, $max, $leng)
+{
+    for ($i = 0; $i < $leng; $i++) {
+        $gen = rand($min, $max);
+        global $arMass;
+        $arMass[] = $gen;
+    }
+}
+sluchMass(2,56,20);
+echo '<pre>';
+print_r($arMass);
+
+
+
 ?>
 </body>
 </html>
