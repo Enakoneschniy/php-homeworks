@@ -37,7 +37,7 @@ function recurcia_1($a, $b)
 recurcia_1(20, 6);
 
 echo '<hr>';
-
+echo '$задание 3 вариант 1';
 function namberN($n)
 {
     $c = 2;
@@ -53,6 +53,27 @@ function namberN($n)
 echo namberN(512);
 echo '<hr>';
 
+echo 'задание 3 вариант 2';
+function stepen($n,$m = 2)
+{
+
+    if($n == $m) {
+        echo "<br>".'yes'."<br>"."$n" ;
+        return;
+    }
+    if($n < $m){
+        echo "<br>".'no'."<br>"."$n" ;
+        return;
+    }
+    else
+        stepen($n,$m * 2);
+
+
+}
+stepen(12);
+
+
+echo '<hr>';
 $r = 0;
 function natur4($n)
 {
@@ -73,8 +94,20 @@ function natur4($n)
 
 }
 natur4(3248570);
+echo '<hr>';
 
+function sort_down($i)
+ {
+       if ($i < 10) {
+                return $i;
+    } else {
 
+                echo ($i % 10) . "<br>";
+         return sort_down($i / 10);
+     }
+ }
+
+ sort_down(123);
 ?>
 
 
