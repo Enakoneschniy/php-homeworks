@@ -78,7 +78,7 @@ echo '<pre>';
         print_r ('<br>'."$b");
     }
 
-
+echo "<hr>";
 ?>
 
 
