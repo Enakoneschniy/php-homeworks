@@ -66,7 +66,6 @@ print_r ("$b");
 
 <?php
 $b = $_REQUEST ["form2"];
-//$a = implode(',' ,$b);
 $patterns = '/[0-9]+\.[0-9]+/';
 echo '<pre>';
 
