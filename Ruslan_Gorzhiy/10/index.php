@@ -1,8 +1,14 @@
 <?php
 
-$text = 'gladerus@gmail.com rsgkesgewgwemomjkmlwewefwefwefm;lmomwefwef dherherg admin@gmail.com ewegtewt 3t wegergerg';
+session_start();
+if (!isset($_SESSION['ReleaseDate'])) {
+    $_SESSION['ReleaseDate']= new DateTime("now");
+}
 
-preg_match_all("/[\._a-zA-Z0-9-]+@[\._a-zA-Z0-9-]+/i", $text, $email);
-print_r($email[0]);
+$date1 = $_SESSION['ReleaseDate'];
+echo "Вы посетили страницу ".$date1->format('Y-m-d H:i:s')."<br>";
+$date2 = new DateTime("now");
+$interval = $date1->diff($date2);
+echo "Вы заходили на сайт ".$interval->format('%R%H часов, %R%I минут, %R%S секунд')." назад";
 
-
+?>
