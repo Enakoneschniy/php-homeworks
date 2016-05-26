@@ -60,6 +60,7 @@ function month_calendar(){
         if($day_count > $dayofmonth) break;
     }
     echo "<table border=1>";
+    echo "<tr><td>Пн</td><td>Вт</td><td>Ср</td><td>Чт</td><td>Пт</td><td class='color'>Сб</td><td class='color'>Вс</td></tr>";
     for($i = 0; $i < count($week); $i++)
     {
         echo "<tr>";
@@ -69,9 +70,11 @@ function month_calendar(){
             {
                 if($j == 5 || $j == 6)
                     echo "<td class='color'>".$week[$i][$j]."</td>";
-                else echo "<td>".$week[$i][$j]."</td>";
+                else 
+                    echo "<td>".$week[$i][$j]."</td>";
             }
-            else echo "<td>&nbsp;</td>";
+            else 
+                echo "<td>&nbsp;</td>";
         }
         echo "</tr>";
     }
@@ -128,5 +131,7 @@ function percentage_of_the_value($array,$percent){
 
 echo 'Массив после: ';
 print_r(percentage_of_the_value($array,$_POST["p"]));
+
+
 
 ?>
