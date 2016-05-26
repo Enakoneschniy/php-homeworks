@@ -32,9 +32,11 @@ echo "<hr>";
 //4.Вывод цифр натурального числа
 function numer($n){
     if(intval($n/10)>0){
+        echo $n%10," ";
         numer(intval($n/10));
+    }else{
+        echo $n;
     }
-    echo $n%10," ";
 }
 numer(1785);
 ?>
