@@ -1,0 +1,23 @@
+.row {
+  padding: 5% 0;
+}
+#formNumber {
+  width: 50%;
+}
+.game {
+	overflow: hidden;
+	margin-top: 100px;
+}
+#user {
+	float: left;
+}
+#comp {
+	float: right;
+}
+.gameLog {
+	text-align: center;
+}
+#user, #comp, .gameLog {
+	font-size: 21px;
+	line-height: 23px;
+}

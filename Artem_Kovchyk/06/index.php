@@ -62,4 +62,4 @@
 
 	$array = [45, 4, 7, 8, 1, 2, 4, 100];
 
-	var_dump(adjustArray($array, 0.8));
+	var_dump(adjustArray($array, 0.2));
