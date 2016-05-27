@@ -1,0 +1,11 @@
+.reg-form{
+    width: 50%;
+    border: 1px solid rgba(128, 128, 128, 0.36);
+    padding: 10px;
+    border-radius: 8px;
+}
+.margin-top{margin-top: 20%;}
+
+.information {border: none;}
+
+.p {border: none;}
