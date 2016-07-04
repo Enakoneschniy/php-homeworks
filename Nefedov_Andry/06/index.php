@@ -80,6 +80,7 @@
 
 <?php
 
+function calandar () {
     //введём ассоциативный массив русских обозначений дней недели
     $arNameOfDays = ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"];
     //введём ассоциативный массив русских обозначений месяцев
@@ -131,10 +132,10 @@
                 <?php
                     for ($i = 0; $i <= 6; $i++): ?>
                         <?php
-                            if ($i < $firstDayOfMonth - 1 and $dayOfMonth == 1) echo '<td class="td_base">'."".'</td>';
-                            elseif ($dayOfMonth > $amountOfDaysInMonth) echo '<td class="td_base">'."".'</td>';
+                            if ($i < $firstDayOfMonth - 1 and $dayOfMonth == 1) echo '<td class="td_base">'."".'</td>'; //заполняем пустые ячейки перед первым числом месяца
+                            elseif ($dayOfMonth > $amountOfDaysInMonth) echo '<td class="td_base">'."".'</td>'; //заполняем пустые ячейки полсе последнего дня месяца
                             elseif ($dayOfMonth == $currentDayOfMonth) {
-                                echo '<td class="td_current">'."$dayOfMonth".'</td>';
+                                echo '<td class="td_current">'."$dayOfMonth".'</td>'; //выделяем текущую дату
                                 $dayOfMonth++;
                             }
                             else {
@@ -147,9 +148,16 @@
                 ?>
             </tr>
         <?php
-        endwhile;
-    ?>
+        endwhile;} //end of function
+
+        ?>
 </table>
+
+<?php
+
+calandar();
+
+?>
 
 <hr>
 
